@@ -8,7 +8,7 @@ public class Contact {
 	private String vorname;
 	private String nachname;
 	
-	static String defaultAnrede = "Herr";
+	static String defaultAnrede = "Herr / Frau";
 	
 	public String getAnrede() {
 		return anrede;
@@ -19,12 +19,9 @@ public class Contact {
 	}
 	
 	public String getBriefanrede() {
-		return briefanrede;
+		return anrede + " " + titel;
 	}
 	
-	public void setBriefanrede(String briefanrede) {
-		this.briefanrede = briefanrede;
-	}
 	
 	public String getTitel() {
 		return titel;
